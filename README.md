@@ -17,7 +17,7 @@ Gosto de manter ambientes Linux estáveis, monitorados e automatizados, e de usa
 ### Automação e IA
 
 - Provisionamento automatizado de clientes com Bash, Python, systemd e DNS via API
-- Agentes multiagente em LangGraph com memória por cliente e aprovação humana
+- Grafos multiagente em LangGraph com memória por cliente (Postgres/pgvector) e aprovação humana
 - Fluxo de desenvolvimento com Claude Code: subagentes, hooks e worktrees
 - Análise de custo de IA: identifiquei um processo responsável por 87% do consumo de tokens
 
@@ -26,14 +26,14 @@ Gosto de manter ambientes Linux estáveis, monitorados e automatizados, e de usa
 - [observabilidade-vps](https://github.com/Igor-lemes/observabilidade-vps): Prometheus, Alertmanager, Blackbox e Grafana para 2 VPS, com 10 alertas e exporter de vencimento de domínio. **Em uso.**
 - [provisionador-multicliente](https://github.com/Igor-lemes/provisionador-multicliente): ciclo de vida de instâncias por cliente com nginx por Host header e inventário em SQLite. **Em uso.**
 - [migracao-vps-x86-arm64](https://github.com/Igor-lemes/migracao-vps-x86-arm64): roteiro e scripts da migração feita em uma noite. **Concluído.**
-- [agentes-langgraph](https://github.com/Igor-lemes/agentes-langgraph): agentes de marketing e vendas via FastAPI. **Piloto com um cliente.**
+- [agentes-langgraph](https://github.com/Igor-lemes/agentes-langgraph): agentes de marketing e vendas via FastAPI, com memória em pgvector e aprovação humana. **Piloto com um cliente; sem avaliação automatizada.**
 - [claude-code-fluxo-agentes](https://github.com/Igor-lemes/claude-code-fluxo-agentes): template do meu fluxo com Claude Code e guia de economia de tokens.
 
 > Grande parte do código foi desenvolvida com o Claude Code. Fui responsável pela arquitetura, revisão, testes e implantação. Cada README informa o status e as limitações conhecidas.
 
 ### Estudando agora
 
-- RAG e bancos vetoriais
+- RAG em produção e busca vetorial
 - Avaliação (evals) de aplicações com LLM
 - Docker, Kubernetes e Terraform
 - Centralização de logs (Loki)
